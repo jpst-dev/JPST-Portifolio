@@ -9,3 +9,24 @@ body {
     background-color: #434c5e;
     color: #fff;
 }
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.titleContainer {
+
+}
+
+.gradientColor {
+    background: linear-gradient(to right, #a3be8c, #b48ead);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

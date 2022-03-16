@@ -5,7 +5,7 @@
 
 strong {
     background: linear-gradient(to right, #a3be8c, #b48ead);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -16,7 +16,7 @@ strong {
 }
 
 .mainContainer h1 {
-    font-size: 40px;  
+    font-size: 40px;
       
 }
 
@@ -27,10 +27,18 @@ strong {
 
 }
 
+.titleContainer {
+    position: absolute;
+    top: 0;
+    margin-top: 3%;
+    z-index: -1;
+}
+
 .imageContainer {
     flex: 1;
     text-align: center;
     margin-top: 10%;
+
 }
 
 .buttonContainer {
@@ -44,9 +52,8 @@ strong {
     padding: 0.5rem 0;
     margin: 0.5rem 1rem;
     width: 11rem;
-    background: transparent;
     border: none;
-    background-image: linear-gradient(to right, #a3be8c, #b48ead);
+    background: transparent linear-gradient(to right, #4C566A, #2E3440);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -54,4 +61,14 @@ strong {
     color: #fff;
     text-decoration: none;
 
+}
+
+@media screen and (max-width: 700px){
+    .imageContainer{
+        display: none;
+    }
+    .mainContainer {
+        max-width: 100%;
+
+    }
 }

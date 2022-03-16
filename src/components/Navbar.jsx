@@ -1,4 +1,5 @@
-import { React, useState, useEffect  } from "react";
+import React, {  useState, useEffect  } from "react";
+import { FiMenu } from "react-icons/fi"
 
 import "../styles/navbar.css";
 
@@ -27,17 +28,17 @@ export function Navbar() {
       
     <nav>
         {
-          (toggleMenu || screenWidth > 500) && (
+          (toggleMenu || screenWidth > 700) && (
             <ul className="list">
-            <li className="items">About</li>            
-            <li className="items">Experiences</li>
-            <li className="items">Projects</li>
-            <li className="items">Contact</li>
-          </ul>
+              <li className="items">About</li>            
+              <li className="items">Experiences</li>
+              <li className="items">Projects</li>
+              <li className="items">Contact</li>
+            </ul>
           )
       }
      
-      <button onClick={toggleNav} className="btn">BTN</button>
+      <button onClick={toggleNav} className="btn"><FiMenu size={30} /></button>
     </nav>
   );
 }

@@ -8,7 +8,10 @@ import "../styles/about.css";
 export function About() {
   return (
     <section id="about">
+
       <div className="mainContainer">
+        <div className="titleContainer"><h1> <strong> About me</strong> </h1></div>
+
         <h1>
           Hi, i'm <strong>João Pedro</strong> <br /> a{" "}
           <strong>Web Developer</strong>{" "}
@@ -30,7 +33,7 @@ export function About() {
               href="https://www.linkedin.com/in/jo%C3%A3o-pedro-teixeira-ba893b186/"
               target="_blank"
             >
-              <FaLinkedin size={30}/>
+              <FaLinkedin size={30} />
             </a>
           </button>
         </div>
