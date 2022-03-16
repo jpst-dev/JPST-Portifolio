@@ -1,6 +1,6 @@
 import React from "react";
 
-import codingImg from "../assets/coding.svg";
+import codingImg from "../assets/coding2.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "../styles/about.css";

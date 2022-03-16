@@ -1,19 +1,23 @@
+#experiences {
+    height: 93vh;
+    max-height: 93vh;
+}
+
 #cards {
-    width: 45vw;
+    width: 44.44vw;
     max-width: 100vw;
-    height: 40vh;
+    height: 35vh;
     max-height: 100vh;
     float: left;
     margin: 25px 2.4%;
     display: flex;
     padding: 20px;
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
 }
 .experienceCard{
     text-align: center;
     width: 100%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 .experienceCard h1{
     text-align: center;
@@ -31,15 +35,8 @@
     color: #fff;
 }
 
-#cards:hover:before {
-    background-image: url("../assets/react-logo.svg");
-    background-size: cover;
-    content: '';
-    height: 100%;
-    opacity: 0.5;
-    width: 100%;
-    z-index: -1;
-    -webkit-transition: opacity 300ms;
+.experienceCard:hover {
+    padding-top: -10px;
 }
 
 #cards:hover p {
@@ -50,3 +47,60 @@
     display: none;
 }
 
+@media screen and (max-width: 800px){
+    #experiences {
+        height: 93vh;
+        max-height: 93vh;
+    }
+    
+    #cards {
+        width: 44.44vw;
+        max-width: 100vw;
+        height: 35vh;
+        max-height: 35vh;
+        float: left;
+        margin: 25px 2.4%;
+        display: flex;
+        padding: 10px;
+        box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+@media screen and (max-width: 740px){
+    #experiences {
+        height: 93vh;
+        max-height: 93vh;
+    }
+    
+    #cards {
+        width: 44.44vw;
+        max-width: 100vw;
+        height: 35vh;
+        max-height: 35vh;
+        float: left;
+        margin: 25px 2.4%;
+        display: flex;
+        padding: 0px;
+        box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+@media screen and (max-width: 700px){
+    #experiences {
+        height: 93vh;
+        max-height: 93vh;
+        margin-left: 25%;
+    }
+    
+    #cards {
+        width: 50vw;
+        max-width: 100vw;
+        height: 40vh;
+        max-height: 50vh;
+        float: left;
+        margin: 25px 2.4%;
+        display: flex;
+        padding: 10px;
+        box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}

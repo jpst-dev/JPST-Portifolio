@@ -30,10 +30,10 @@ export function Navbar() {
         {
           (toggleMenu || screenWidth > 700) && (
             <ul className="list">
-              <li className="items">About</li>            
-              <li className="items">Experiences</li>
-              <li className="items">Projects</li>
-              <li className="items">Contact</li>
+              <li className="items"><a href="#about">About</a></li>            
+              <li className="items"><a href="#experiences">Experiences</a></li>
+              <li className="items"><a href="#projects">Projects</a></li>
+              <li className="items"><a href="#contact">Contact</a></li>
             </ul>
           )
       }

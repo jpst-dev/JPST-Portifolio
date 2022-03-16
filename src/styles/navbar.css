@@ -18,7 +18,8 @@ nav {
     position: relative;
     
 }
-.items {
+.items a {
+    text-decoration: none;
     margin-right: 50px;
     font-size: 20px;
     text-transform: uppercase;
