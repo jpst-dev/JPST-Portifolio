@@ -2,7 +2,6 @@ import React from 'react'
 
 import {ExperiencesCards} from "./ExperiencesCards";
 
-import "../styles/experiences.css"
 import {FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaJs} from "react-icons/fa";
 
 export function Experiences() {

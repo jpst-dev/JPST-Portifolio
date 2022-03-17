@@ -13,6 +13,7 @@
     display: flex;
     padding: 20px;
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .experienceCard{
     text-align: center;
@@ -35,12 +36,17 @@
     color: #fff;
 }
 
+#cards:hover {
+    box-shadow: 0 10px 50px 0 #a3be8c, 0 6px 20px 0 #b48ead;
+}
+
 .experienceCard:hover {
     padding-top: -10px;
 }
 
 #cards:hover p {
     display: block;
+    
 
 }
 #cards:hover a {
@@ -64,7 +70,7 @@
         margin: 25px 2.4%;
         display: flex;
         padding: 10px;
-        box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 10px 50px 0 #a3be8c, 0 6px 20px 0 #b48ead;
     }
 }
 

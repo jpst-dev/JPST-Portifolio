@@ -1,6 +1,4 @@
 import React from "react"
-import codingImg from "../assets/coding.svg"
-import { FaReact, FaNodeJs } from "react-icons/fa"
 
 import "../styles/experiencesCards.css"
 

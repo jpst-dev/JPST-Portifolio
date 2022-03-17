@@ -10,7 +10,9 @@ export function About() {
     <section id="about">
 
       <div className="mainContainer">
-        <div className="titleContainer"><h1> <strong> About me</strong> </h1></div>
+        <div className="titleContainer">
+          <h1> <strong> About me </strong> </h1>
+        </div>
 
         <h1>
           Hi, i'm <strong>João Pedro</strong> <br /> a{" "}
