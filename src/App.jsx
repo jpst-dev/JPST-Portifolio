@@ -4,11 +4,15 @@ import { Experiences } from "./components/Experiences"
 
 import "./styles/global.css"
 
+import { Link } from "react-scroll"
+
 function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar> 
+        
+      </Navbar>
       <About />
         <Experiences />
     </>

@@ -15,7 +15,6 @@ export function Experiences() {
             <ExperiencesCards icon={<FaNodeJs size={100}/>} title={"NodeJs"}/>
         </section>
 
-
     )
 
 }

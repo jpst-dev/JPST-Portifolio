@@ -16,8 +16,10 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: all 0.3s ease-in-out 0s;
     
 }
+
 .items a {
     text-decoration: none;
     margin-right: 50px;
@@ -25,7 +27,6 @@ nav {
     text-transform: uppercase;
     color: #f1f1f1;
     cursor: pointer;
-    
 }
 
 .btn {

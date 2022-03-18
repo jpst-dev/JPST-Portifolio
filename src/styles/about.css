@@ -4,11 +4,10 @@
     background: linear-gradient(-45deg, #A3BE8C, #B48EAD, #3B4252, #2E3440);
     background-size: 200% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
 } 
 
 strong {
-    background: linear-gradient(45deg, #A3BE8C, #B48EAD);
+    background: linear-gradient(45deg, #B48EAD, #A3BE8C);
     background-size: 400% 400%;
 
     -webkit-background-clip: text;
@@ -17,8 +16,8 @@ strong {
 }
 
 .mainContainer {
-    margin-top: 5vh;
-    max-width: 60%;
+    width: 65%;
+    max-width: 100%;
     padding: 25vh 10vh;
 }
 
@@ -44,8 +43,8 @@ strong {
 .imageContainer {
     flex: 1;
     text-align: center;
-    padding: 15vh;
-    margin-top: 5vh;
+    margin-top: 5%;
+    animation: 3s ease-in-out 0s infinite alternate forwards running top-to-bottom;
 }
 
 .buttonContainer {
@@ -59,12 +58,9 @@ strong {
     padding: 15px;
     margin: 0.5rem 1rem;
     height: 5em;
-    width: 15vw;
+    width: 15em;
     border: none;
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    background: linear-gradient(45deg, #A3BE8C, #B48EAD);
-    background-size: 400% 400%;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -103,4 +99,16 @@ strong {
     100% {
       background-position: 0% 50%;
     }
-  }
+}
+
+@keyframes top-to-bottom {
+    33% {
+        transform: translateY(5%);
+    }
+    66% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(5%);
+    }
+}

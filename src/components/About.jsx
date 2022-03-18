@@ -1,6 +1,6 @@
 import React from "react";
 
-import codingImg from "../assets/coding2.svg";
+import astronautImg from "../assets/astronaut.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "../styles/about.css";
@@ -42,7 +42,7 @@ export function About() {
       </div>
 
       <div className="imageContainer">
-        <img src={codingImg} alt="" style={{ maxHeight: "500px" }} />
+        <img src={astronautImg} alt="" style={{ maxHeight: "500px" }} />
       </div>
     </section>
   );
