@@ -41,6 +41,18 @@ nav {
     font-size: 18px;
     
 }
+.active a {
+    background: linear-gradient(45deg, #B48EAD, #A3BE8C);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #B48EAD, #A3BE8C);
+}
+
+
 
 /* Media queries */
 

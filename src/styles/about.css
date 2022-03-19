@@ -22,13 +22,12 @@ strong {
 }
 
 .mainContainer h1 {
-    font-size: 50px;
-      
+    font-size: 50px; 
 }
 
 .mainContainer p {
     font-size: 20px;
-    margin-top: 20px !important; 
+    margin-top: 20px; 
     font-family: 'Poppins', sans-serif;
 
 }
@@ -49,21 +48,20 @@ strong {
 
 .btn-navigate {
     
-  
-    margin-top: 10%; 
-    margin-left: 70%;
+    margin-top: 10vw;
+    margin-bottom: 50vh;
+    position: relative;
     padding: 12px 50px 12px 20px;
     background: transparent;
+    border: 2px solid;
     border-radius: 10px;
-    border-image: linear-gradient(to right, #A3BE8C, #B48EAD    );
+    border-image:  linear-gradient(to right, #A3BE8C, #B48EAD    );
     border-image-slice: 1;
-
-    font-size: 16px;
+    box-sizing: inherit;
+    font-size: 20px;
     color: #fff;
     transition: all 0.5s;
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-
 }
 
 .btn-navigate:hover {
@@ -125,6 +123,15 @@ strong {
 }
 
 /* Media queries */
+@media screen and (max-width: 1200px){
+    .imageContainer{
+        display: none;
+    }
+    .mainContainer {
+        width: 100vw;
+    }
+
+}
 
 @media screen and (max-width: 700px){
     .imageContainer{

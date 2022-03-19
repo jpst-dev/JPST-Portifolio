@@ -42,23 +42,25 @@ export function About() {
             </a>
           </button>
         </div>
-
-        <Link
+       
+          <button className="btn-navigate">
+          <Link
           to="experiences"
           spy={true}
           smooth={true}
           duration={500}
           className="button"
         >
-          <button className="btn-navigate">
             View my work <FaArrowRight className="iconArrow" size={20} />
+            </Link>
           </button>
-        </Link>
+        
       </div>
 
       <div className="imageContainer">
         <img src={astronautImg} alt="" style={{ maxHeight: "500px" }} />
       </div>
+      
     </section>
   );
 }

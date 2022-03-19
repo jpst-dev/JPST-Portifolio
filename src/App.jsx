@@ -1,10 +1,9 @@
 import { About } from "./components/About"
 import { Navbar } from "./components/Navbar"
 import { Experiences } from "./components/Experiences"
+import { Projects } from "./components/Projects"
 
 import "./styles/global.css"
-
-import { Link } from "react-scroll"
 
 function App() {
 
@@ -15,7 +14,7 @@ function App() {
       <Navbar /> 
 
       <Experiences />
-      <Experiences />
+      <Projects />
     </>
    
   )

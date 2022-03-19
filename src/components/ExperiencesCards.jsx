@@ -5,8 +5,7 @@ import "../styles/experiencesCards.css"
 export function ExperiencesCards(props) {
     return (
 
-        <section id="cards">
-
+        <div id="cards">
             <div className="experienceCard">
                 <a href="">{props.icon} {props.icon2} {props.icon3}</a>
                 <h1>{props.title}</h1>
@@ -17,6 +16,6 @@ export function ExperiencesCards(props) {
                     aliquip ex ea commodo consequat.
                 </p>
             </div>
-        </section>
+        </div>
     )
 }
