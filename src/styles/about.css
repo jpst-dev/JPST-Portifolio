@@ -47,14 +47,39 @@ strong {
     animation: 3s ease-in-out 0s infinite alternate forwards running top-to-bottom;
 }
 
+.btn-navigate {
+    
+  
+    margin-top: 10%; 
+    margin-left: 70%;
+    padding: 12px 50px 12px 20px;
+    background: transparent;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, #A3BE8C, #B48EAD    );
+    border-image-slice: 1;
+
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+
+}
+
+.btn-navigate:hover {
+    border-image-width: 200px;
+    
+}
+
 .buttonContainer {
     text-align: center;
     margin-top: 5vh;
+
 }
 
 .buttonContainer button {
     display: inline-block;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 15px;
     margin: 0.5rem 1rem;
     height: 5em;
@@ -66,13 +91,37 @@ strong {
     -webkit-text-fill-color: transparent;
     animation: gradient 15s ease infinite;
 }
-.buttonContainer:hover button {
+.buttonContainer button:hover{
     cursor: pointer;
+    border: inherit;
+    border-image: linear-gradient(to right, #A3BE8C, #B48EAD);
+    border-image-slice: 1;
+    border-image-width: 200px; 
+
 }
 .buttonContainer button a {
     color: #fff;
     text-decoration: none;
 
+}
+
+.iconArrow {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    transition: 0.3s;
+
+}
+
+.btn-navigate:hover .iconArrow{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 /* Media queries */
