@@ -1,170 +1,181 @@
 #about {
-    display: flex;
-    height: 100vh;
-    background: linear-gradient(-45deg, #A3BE8C, #B48EAD, #3B4252, #2E3440);
-    background-size: 200% 400%;
-    animation: gradient 15s ease infinite;
-} 
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(-45deg, #a3be8c, #b48ead, #3b4252, #2e3440);
+  background-size: 200% 400%;
+  animation: gradient 15s ease infinite;
+}
 
 strong {
-    background: linear-gradient(45deg, #B48EAD, #A3BE8C);
-    background-size: 400% 400%;
+  background: linear-gradient(45deg, #b48ead, #a3be8c);
+  background-size: 400% 400%;
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
 }
 
 .mainContainer {
-    width: 65%;
-    max-width: 100%;
-    padding: 25vh 10vh;
+  width: 65%;
+  max-width: 100%;
+  padding: 25vh 10vh;
 }
 
 .mainContainer h1 {
-    font-size: 50px; 
+  font-size: 50px;
 }
 
 .mainContainer p {
-    font-size: 20px;
-    margin-top: 20px; 
-    font-family: 'Poppins', sans-serif;
-
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .titleContainer {
-    position: absolute;
-    top: 0;
-    padding-top: 50px;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  padding-top: 50px;
+  z-index: -1;
 }
 
 .imageContainer {
-    flex: 1;
-    text-align: center;
-    margin-top: 5%;
-    animation: 3s ease-in-out 0s infinite alternate forwards running top-to-bottom;
+  flex: 1;
+  text-align: center;
+  margin-top: 5%;
+  animation: 3s ease-in-out 0s infinite alternate forwards running top-to-bottom;
 }
 
-.btn-navigate {
-    
-    margin-top: 10vw;
-    margin-bottom: 50vh;
-    position: relative;
-    padding: 12px 50px 12px 20px;
-    background: transparent;
-    border: 2px solid;
-    border-radius: 10px;
-    border-image:  linear-gradient(to right, #A3BE8C, #B48EAD    );
-    border-image-slice: 1;
-    box-sizing: inherit;
-    font-size: 20px;
-    color: #fff;
-    transition: all 0.5s;
-    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.btn-navigate:hover {
-    border-image-width: 200px;
-    
+#buttonContainer {
+  margin-left: 30%;
 }
 
 .buttonContainer {
-    text-align: center;
-    margin-top: 5vh;
-
+  text-align: center;
+  margin-top: 5vh;
+  height: 100px;
+  float: left;
 }
 
 .buttonContainer button {
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 0.5rem 1rem;
-    height: 5em;
-    width: 15em;
-    border: none;
-    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 15s ease infinite;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0.5rem 1rem;
+  height: 5em;
+  width: 15em;
+  border: none;
+  box-shadow: 5px 5px 0 4.5px rgb(163, 190, 140);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
 }
-.buttonContainer button:hover{
-    cursor: pointer;
-    border: inherit;
-    border-image: linear-gradient(to right, #A3BE8C, #B48EAD);
-    border-image-slice: 1;
-    border-image-width: 200px; 
 
+.buttonContainer button:hover {
+  cursor: pointer;
+
+  border: 2px solid transparent;
+  border-image-slice: 1;
+
+  box-shadow: 5px 5px 0 4.5px rgb(180, 142, 173);
 }
-.buttonContainer button a {
-    color: #fff;
-    text-decoration: none;
 
+.buttonContainer button:active {
+  box-shadow: 5px 5px rgb(180, 142, 173);
+  margin-top: 15px;
+}
+
+.buttonContainer button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-navigate {
+  display: flex;
+  margin-top: 30%;
+  position: relative;
+  padding: 12px 50px 12px 20px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 10px;
+  border-image: linear-gradient(to right, #a3be8c, #b48ead);
+  border-image-slice: 1;
+  box-sizing: inherit;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.5s;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-navigate:hover {
+  border-image-width: 600px;
 }
 
 .iconArrow {
-    position: absolute;
-    right: 15px;
-    top: 11px;
-    transition: 0.3s;
-
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  transition: 0.3s;
 }
 
-.btn-navigate:hover .iconArrow{
-    position: absolute;
-    right: 15px;
-    top: 11px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+.btn-navigate:hover .iconArrow {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 /* Media queries */
-@media screen and (max-width: 1200px){
-    .imageContainer{
-        display: none;
-    }
-    .mainContainer {
-        width: 100vw;
-    }
+@media screen and (max-width: 1200px) {
+  .imageContainer {
+    display: none;
+  }
 
+  .mainContainer {
+    width: 100vw;
+  }
 }
 
-@media screen and (max-width: 700px){
-    .imageContainer{
-        display: none;
-    }
-    .mainContainer {
-        max-width: 100%;
+@media screen and (max-width: 700px) {
+  .imageContainer {
+    display: none;
+  }
 
-    }
+  .mainContainer {
+    max-width: 100%;
+  }
 }
 
 /* Keyframes */
 
 @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes top-to-bottom {
-    33% {
-        transform: translateY(5%);
-    }
-    66% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(5%);
-    }
+  33% {
+    transform: translateY(5%);
+  }
+
+  66% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(5%);
+  }
 }

@@ -26,43 +26,18 @@ export function Navbar() {
     <nav>
       {(toggleMenu || screenWidth > 700) && (
         <ul className="list">
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-300}
-            duration={500}
-            className="items"
-          >
+          <Link activeClass="active" to="about" spy={true} smooth={true} offset={-300} duration={500} className="items">
             <a href="#about">About</a>
           </Link>
-          <Link
-            activeClass="active"
-            to="experiences"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="items"
-          >
+          <Link activeClass="active" to="experiences" spy={true} smooth={true} duration={500} className="items">
             <a href="#experiences">Experiences</a>
           </Link>
-          
-          <Link activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="items">
+
+          <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} className="items">
             <a href="#projects">Projects</a>
           </Link>
-          
-          <Link activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="items">
+
+          <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} className="items">
             <a href="#contact">Contact</a>
           </Link>
         </ul>

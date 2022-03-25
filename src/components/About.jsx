@@ -16,51 +16,44 @@ export function About() {
             <strong> About me </strong>{" "}
           </h1>
         </div>
-
         <h1>
-          Hi, i'm <strong>João Pedro</strong> <br /> a{" "}
-          <strong>Web Developer</strong>{" "}
+          Hi, i&apos;m <strong>João Pedro</strong> <br /> a <strong>Web Developer</strong>{" "}
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.{" "}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.{" "}
         </p>
-        <div className="buttonContainer">
-          <button className="btnGit">
-            <a href="https://github.com/JPST-Developer" target="_blank">
-              <FaGithub size={30} />
+
+        <div id="buttonContainer">
+          <div className="buttonContainer">
+            <a className="" href="https://github.com/JPST-Developer" target="_blank" rel="noreferrer">
+              <button className="btnGit">
+                {" "}
+                <FaGithub size={30} />{" "}
+              </button>
             </a>
-          </button>
-          <button className="btnLinkedin">
-            <a
-              href="https://www.linkedin.com/in/jo%C3%A3o-pedro-teixeira-ba893b186/"
-              target="_blank"
-            >
-              <FaLinkedin size={30} />
+          </div>
+
+          <div className="buttonContainer">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-teixeira-ba893b186/" target="_blank" rel="noreferrer">
+              <button className="btnLinkedin">
+                <FaLinkedin size={30} />{" "}
+              </button>
             </a>
-          </button>
+          </div>
         </div>
-       
+
+        <Link to="experiences" spy={true} smooth={true} duration={500} className="button">
           <button className="btn-navigate">
-          <Link
-          to="experiences"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="button"
-        >
             View my work <FaArrowRight className="iconArrow" size={20} />
-            </Link>
           </button>
-        
+        </Link>
       </div>
 
       <div className="imageContainer">
         <img src={astronautImg} alt="" style={{ maxHeight: "500px" }} />
       </div>
-      
     </section>
   );
 }
