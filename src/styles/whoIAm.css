@@ -1,0 +1,76 @@
+#whoIAm {
+    background-color: #546077;
+    height: 100vh;
+    padding-top: 50px;
+  }
+
+  #whoIAm strong {
+    margin-left: 25px;
+    font-size: 35px;
+  }
+
+  .img-wrapper {
+    max-width: 200px;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+  }
+  
+  .img-wrapper::before{
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border: 6px solid #546077;
+    border-top-color: #a3be8c;
+    border-bottom-color: #b48ead;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.about-content h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-container{
+  margin-left: 30%;
+  max-width: 40%;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.btn-about {
+  display: block;
+  margin-top: 90px;
+  padding: 12px 20px 12px 20px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 10px;
+  border-image: linear-gradient(to right, #a3be8c, #b48ead);
+  border-image-slice: 1;
+  box-sizing: inherit;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+
+}
+
+.btn-about:hover {
+  border-image-width: 600px;
+}
+

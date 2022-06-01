@@ -1,27 +1,47 @@
 import React from "react";
 
-import { ExperiencesCards } from "./ExperiencesCards";
-
-import { FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
-
-import "../styles/experiencesCards.css";
+import "../styles/experiences.css";
 
 export function Experiences() {
   return (
-    <section className="cardsContainer" id="experiences">
-      <h1 style={{ marginLeft: "25px", fontSize: "40px" }}>
+    <section id="experiences">
+      <h1>
         <strong>Experiences</strong>
       </h1>
-      <div id="cardContainer">
-        <ExperiencesCards icon={<FaReact size={100} />} title={"ReactJs"} />
-        <ExperiencesCards
-          icon={<FaHtml5 size={100} />}
-          icon2={<FaCss3Alt size={100} />}
-          icon3={<FaJs size={100} />}
-          title={"HTML, CSS, JavaScript"}
-        />
-        <ExperiencesCards icon={<FaNodeJs size={100} />} title={"NodeJs"} />
-      </div>
+     
+        <div id="skills-wrapper">
+          <div className="skill">
+            <div className="content">
+              <span>90%</span>
+              <span>HTML</span>
+            </div>
+          </div>
+          <div className="skill">
+            <div className="content">
+              <span>90%</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <div className="skill">
+            <div className="content">
+              <span>85%</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div className="skill">
+            <div className="content">
+              <span>80%</span>
+              <span>ReactJS</span>
+            </div>
+          </div>
+          <div className="skill">
+            <div className="content">
+              <span>70%</span>
+              <span>Styled<br/>Components</span>
+            </div>
+          </div>
+        </div>
+      
     </section>
   );
 }

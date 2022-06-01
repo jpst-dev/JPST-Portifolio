@@ -20,9 +20,7 @@ export function About() {
           Hi, i&apos;m <strong>João Pedro</strong> <br /> a <strong>Web Developer</strong>{" "}
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.{" "}
+          I&apos;m a front-end student, with a passion for everything front-end. Welcome to my corner of the internet. I&apos;m glad you&apos;re here!{" "}
         </p>
 
         <div id="buttonContainer">
@@ -44,9 +42,9 @@ export function About() {
           </div>
         </div>
 
-        <Link to="experiences" spy={true} smooth={true} duration={500} className="button">
+        <Link to="whoIAm" spy={true} smooth={true} duration={500} className="button">
           <button className="btn-navigate">
-            View my work <FaArrowRight className="iconArrow" size={20} />
+            Quem sou eu? <FaArrowRight className="iconArrow" size={20} />
           </button>
         </Link>
       </div>

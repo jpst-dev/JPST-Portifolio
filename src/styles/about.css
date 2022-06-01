@@ -10,6 +10,7 @@ strong {
   background: linear-gradient(45deg, #b48ead, #a3be8c);
   background-size: 400% 400%;
   background-clip: text;
+  font-size: 40px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 15s ease infinite;

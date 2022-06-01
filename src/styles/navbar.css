@@ -8,6 +8,7 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition: top 0.5s;
   transition: top 0.5s;
+  z-index: 1;
 }
 
 .list {
@@ -43,11 +44,8 @@ nav {
   background: linear-gradient(45deg, #b48ead, #a3be8c);
   background-size: 100% 100%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  border-bottom: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #b48ead, #a3be8c);
 }
 
 /* Media queries */

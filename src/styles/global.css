@@ -22,11 +22,17 @@ p {
   font-weight: 400;
 }
 
-.titleContainer {
-}
-
 .gradientColor {
   background: linear-gradient(to right, #a3be8c, #b48ead);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.container {
+  padding: 20px;
+  width: 70vw;
+  height: 70vh;
+  margin-left: 15vw;
+}
+

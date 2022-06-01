@@ -29,6 +29,11 @@ export function Navbar() {
           <Link activeClass="active" to="about" spy={true} smooth={true} offset={-300} duration={500} className="items">
             <a href="#about">About</a>
           </Link>
+
+          <Link activeClass="active" to="whoIAm" spy={true} smooth={true} duration={500} className="items">
+            <a href="#experiences">Sobre mim</a>
+          </Link>
+
           <Link activeClass="active" to="experiences" spy={true} smooth={true} duration={500} className="items">
             <a href="#experiences">Experiences</a>
           </Link>

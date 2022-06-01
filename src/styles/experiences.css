@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Prosto+One&display=swap');
+
+#experiences {
+  height: 100vh;
+  max-height: 100vh;
+  padding-top: 50px;
+  
+}
+
+#experiences strong {
+  margin-left: 25px;
+  font-size: 35px;
+
+}
+
+.skills-wrapper {
+ display: flex;
+}
+
+.skill {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3) -5px -5px -20px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  float: left;
+}
+
+.skill:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #434c5e;
+  box-shadow: inset 5px 5px 20px rgba(0,0,0,0.3) inset -5px -5px -20px rgba(0,0,0,0.3);
+}
+
+.skill:nth-child(1) {
+  background-image: conic-gradient(#f16524 90%, transparent 0);
+  color: #f16524;
+}
+
+.skill:nth-child(2) {
+  background-image: conic-gradient(#1b84c1 90%, transparent 0);
+  color: #1b84c1;
+}
+
+.skill:nth-child(3) {
+  background-image: conic-gradient(#efd81d 85%, transparent 0);
+  color: #efd81d;
+}
+
+.skill:nth-child(4) {
+  background-image: conic-gradient(#61DBFB 80%, transparent 0);
+  color: #61DBFB;
+}
+
+.skill:nth-child(5) {
+  background-image: conic-gradient(palevioletred 80%, transparent 0);
+  color: palevioletred;
+}
+
+.content {
+  font-size: 20px;
+  z-index: 1;
+  text-align: center;
+  font-family: Poppins;
+}
+
+.content span {
+  display: block;
+}
