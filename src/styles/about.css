@@ -1,6 +1,7 @@
 #about {
   display: flex;
   height: 100vh;
+  max-height: 100vh;
   background: linear-gradient(-45deg, #a3be8c, #b48ead, #3b4252, #2e3440);
   background-size: 200% 400%;
   animation: gradient 15s ease infinite;
@@ -18,7 +19,7 @@ strong {
 
 .mainContainer {
   width: 65%;
-  max-width: 100%;
+  max-width: 100vw;
   padding: 25vh 10vh;
 }
 
@@ -47,25 +48,22 @@ strong {
 }
 
 #buttonContainer {
-  margin-left: 30%;
-}
-
-.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
   margin-top: 5vh;
   height: 100px;
-  float: left;
 }
 
 .buttonContainer button {
-  display: inline-block;
+  display: block;
   border-radius: 10px;
   padding: 15px;
   margin: 0.5rem 1rem;
   height: 5em;
   width: 15em;
   border: none;
-  box-shadow: 5px 5px 0 4.5px rgb(163, 190, 140);
+  box-shadow: 5px 5px 0 4px rgb(0, 0, 0, 0.2);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -78,11 +76,11 @@ strong {
   border: 2px solid transparent;
   border-image-slice: 1;
 
-  box-shadow: 5px 5px 0 4.5px rgb(180, 142, 173);
+  box-shadow: 5px 5px 0 4px rgb(0,0,0,0.3);
 }
 
 .buttonContainer button:active {
-  box-shadow: 5px 5px rgb(180, 142, 173);
+  box-shadow: 5px 5px rgb(0, 0,0 , 0.3);
   margin-top: 15px;
 }
 
@@ -91,8 +89,12 @@ strong {
   text-decoration: none;
 }
 
+.button{
+  display: contents;
+}
+
 .btn-navigate {
-  display: flex;
+  display: block;
   margin-top: 30%;
   position: relative;
   padding: 12px 50px 12px 20px;
